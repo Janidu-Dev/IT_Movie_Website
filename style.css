@@ -8,25 +8,94 @@ body::-webkit-scrollbar{
     width: 12px;
 }
 body::-webkit-scrollbar-track{
-    background-color: #030303;
+    background-color: var(--black);
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #FF0002;
+    background-color: var(--red);
     border-radius: 20px;
-    border: 3px #FF0002 solid;
+    border: 3px var(--red) solid;
+}
+
+:root{
+    --red: #FF0002;
+    --black: #030303;
+    --white: #FFF;
+    --para-color: #848484;
 }
 
 body{
     width: 100%;
     height: 200vh;
     overflow-x: hidden;
-    background-color: #030303;
+    background-color: var(--black);
     cursor: url('images/xx.png'), auto;
     scrollbar-gutter: stable;
     
 }
 
+
+
+/* COMMON STYLES  */
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 150px;
+}
+
+.main-heading{
+    color: var(--red);
+    font-size: 8rem;
+    font-weight: 400;
+    line-height: 65%;
+    font-family: 'Built Titling', sans-serif;
+    
+}
+
+.main-para{
+    width: 90%;
+    color: var(--white);
+    font-weight: 400;
+    color: var(--para-color);
+    margin-top: 32px;
+}
+
+.main-button{
+    padding: 12px 80px;
+    background-color: var(--red);
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 60px;
+    color: var(--white);
+    display: inline-block;
+    margin-top: 32px;
+    width: 50%;
+    text-align: center;
+    text-wrap: nowrap;
+    transition: ease-in-out .5s;
+}
+.main-button:hover{
+    box-shadow: 0 0 50px 15px var(--red);
+}
+.other-font{
+    font-family: "Another Danger - Demo";
+    color: var(--white);
+}
+.blur-ball{
+    width: 500px;
+    height: 500px;
+    background-color: var(--red);
+    position: absolute;
+    filter: blur(300px);
+    z-index: -1;
+}
+
+
+
 /* NAVIGATION BAR */
+
 .navbar{
     /* background-color: black; */
     width: 100%;
@@ -56,74 +125,80 @@ body{
 .navlinks ul li a{
     font-size: 20px;
     text-decoration: none;
-    color: #FFF;
+    color: var(--white);
     transition: ease-in-out .2s;
 
 }
 .navlinks ul li a:hover{
-    color: #FF0002;
+    color: var(--red);
 }
 
+
+
 /* LANDING PAGE */
-.landing_page{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    padding: 0px 150px;
-}
 .landing_page_image img{
     width: 100%;
     position: absolute;
     z-index: -1;
     top: -5%;
+    user-select: none;
 }
 .landing_left_texts{
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-top: 64px;
-    user-select: none;
+    /* user-select: none; */
 }
-.landing_left_texts h1{
-    color: #FF0002;
-    font-size: 8rem;
-    font-weight: 400;
-    line-height: 65%;
-    font-family: 'Built Titling', sans-serif;
-    
-}
+
 #text_you{
-    font-family: "Another Danger - Demo";
-    color: #FFF;
+    color: var(--white);
     position: relative;
     bottom: 30px;
 }
 #text_missed{
-    color: #fff;
+    color: var(--white);
 }
-.landing_left_texts p{
-    width: 90%;
-    color: #fff;
-    font-weight: 400;
-    color: #848484;
+
+
+/* SECOND SECTION  */
+
+
+.b1{
+    left: -20%;
+}
+.b2{
+    right: -20%;
+    top: 150%;
+}
+.second-section-img img{
+    width: 100%;
+    position: relative;
+    right: 5%;
+}
+.second-section-texts{
+    /* background-color: gray; */
+    margin-right: 150px;
+}
+.second-section-para{
+    padding-top: 22px;
+}
+.watch-btn{
+    display: flex;
     margin-top: 32px;
-}
-.landing_page_button{
-    padding: 12px 80px;
-    background-color: #FF0002;
-    font-size: 2rem;
+    width: 200px;
+    align-items: center;
     text-decoration: none;
-    border-radius: 60px;
-    color: #FFF;
-    display: inline-block;
-    margin-top: 32px;
-    width: 50%;
-    text-align: center;
-    text-wrap: nowrap;
-    transition: ease-in-out .5s;
 }
-.landing_page_button:hover{
-    box-shadow: 0 0 50px 15px #FF0002;
+.watch-btn img{
+    width: 46px;
+    transition: .5s;
+}
+.watch-btn p{
+    font-size: 2rem;
+    color: var(--white);
+    margin-left: 18px;
+}
+.watch-btn:hover .yt-image {
+    transform: rotate(-20deg) scale(1.2);
 }
