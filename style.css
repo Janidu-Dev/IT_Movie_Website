@@ -21,6 +21,7 @@ body::-webkit-scrollbar-thumb{
     --black: #030303;
     --white: #FFF;
     --para-color: #848484;
+    --dark-red: #480000;
 }
 
 body{
@@ -50,6 +51,7 @@ section{
     font-size: 8rem;
     font-weight: 400;
     line-height: 65%;
+    letter-spacing: -4px;
     font-family: 'Built Titling', sans-serif;
     
 }
@@ -201,4 +203,81 @@ section{
 }
 .watch-btn:hover .yt-image {
     transform: rotate(-20deg) scale(1.2);
+}
+
+
+/* BOOKING PAGE  */
+.booking-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+.booking_text{
+    text-align: center;
+}
+.tick{
+    font-size: 6rem;
+    position: relative;
+    bottom: 32px;
+}
+.booking-cards{
+    display: flex;
+    /* background-color: gray; */
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+.card{
+    width: 300px;
+    padding: 32px;
+    display: flex;
+    border-radius: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 350px;
+    background-color: var(--dark-red);
+    position: relative;
+}
+.card h2{
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 400;
+    position: relative;
+}
+.card p{
+    color: var(--para-color);
+}
+.card a{
+    background-color: var(--white);
+    color: var(--dark-red);
+    text-decoration: none;
+    padding: 12px 48px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    transition: .3s;
+}
+.card a:hover{
+    box-shadow: 0 0 100px 15px var(--white);
+}
+.most-pop h2::before {
+    content: "MOST POPULAR";
+    position: absolute;
+    top: -75px;
+    left: 60%;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    color: var(--dark-red);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 6px 48px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    white-space: nowrap; 
+    z-index: 1; 
 }
