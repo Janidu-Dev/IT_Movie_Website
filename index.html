@@ -28,24 +28,70 @@
         </div>
     </nav>
     <div class="landing_page_image">
-        <img src="images/1.png" alt="">
+        <img src="images/11.png" alt="">
     </div>
 
     <!-- LANDING PAGE -->
     <section class="landing_page">
         <div class="landing_left_texts">
-            <h1>I'VE CRAVED <span id="text_you">YOU</span><br> I'VE <span id="text_missed">MISSED</span> YOU</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Aliquid similique illum veniam dolores amet aut adipisci 
-                veritatis porro possimus ipsa at suscipit sequi, asperiores 
-                corrupti eos, rem exercitationem, dicta neque illum veniam dolores amet 
-                aut adipisci illum veniam dolores amet aut adipisciillum veniam dolores amet 
-                aut adipisciillum veniam dolores amet aut adipisciillum veniam dolores amet aut adipisci!</p>
-            <a href="" class="landing_page_button">BOOK NOW</a>
+            <h1 class="main-heading">I'VE CRAVED <span id="text_you" class="other-font">YOU</span><br> I'VE <span id="text_missed">MISSED</span> YOU</h1>
+            <p class="main-para">Guess who's back... and still handing out balloons? Welcome to Derry, where Pennywise is waiting with his signature grin (and maybe a snack or two—watch your step!). Dive into the wild world of IT, where thrills, chills, and floating fun never stop. Whether you're here for the scares or just love clowns with killer charm, you're in for a treat. So grab a balloon, stick around, and remember: down here, the fun never floats away!</p>
+            <a href="" class="landing_page_button main-button">BOOK NOW</a>
+        </div>
+    </section>
+
+    <div class="blur-ball b1"></div>
+    <div class="blur-ball b2"></div>
+
+    <section class="second-section">
+        <div class="second-section-img">
+            <img src="images/2.png">
+        </div>
+        <div class="second-section-texts">
+            <h1 class="main-heading">PENNYWISE <br> <span class="other-font">IS BACK</span></h1>
+            <p class="main-para second-section-para">The shadows stir, the sewers whisper, and the air feels heavier—Pennywise has returned. His sinister smile and glowing eyes pierce through the darkness, beckoning you closer. He’s not just here to haunt Derry; he’s here to haunt you. The balloons are rising, the fear is palpable, and the nightmare is only beginning. Step carefully, because Pennywise is waiting in the places you least expect—always watching, always hungry. Will you face him, or will you float?</p>
+            <a href="https://youtu.be/xhJ5P7Up3jA?si=lanOf3wib1mSgDdg" target="_blank" class="watch-btn"><img src="images/video.png" class="yt-image"><p class="yt-p">WATCH TRAILER</p></a>
+        </div>
+    </section>
+
+
+    <section class="booking-section">
+        <div class="booking_text">
+            <h1 class="main-heading">
+                BOOK NOW <br><span class="other-font tick">TICKETS</span>
+            </h1>
+        </div>
+        <div class="booking-cards">
+            <div class="card">
+                <h2 class="card-h2">BALCONY</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis in molestiae natus assumenda eum voluptates vel sequi ex quod blanditiis, illum.</p>
+                <a href="">BOOK NOW</a>
+            </div>
+            <div class="card most-pop">
+                <h2 class="card-h2">3D</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis in molestiae natus assumenda eum voluptates vel sequi ex quod blanditiis, illum.</p>
+                <a href="">BOOK NOW</a>
+            </div>
+            <div class="card">
+                <h2 class="card-h2">NORMAL</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis in molestiae natus assumenda eum voluptates vel sequi ex quod blanditiis, illum.</p>
+                <a href="">BOOK NOW</a>
+            </div>
         </div>
     </section>
 
 
     <script src="smooth-scroll.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 10,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.4,
+        });
+
+        
+    </script>
 </body>
 </html>
